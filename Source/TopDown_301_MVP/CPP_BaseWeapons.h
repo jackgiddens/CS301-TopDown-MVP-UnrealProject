@@ -17,14 +17,12 @@ public:
 
 protected:
 	// Called when the game starts or when spawned
-	virtual void BeginPlay() override;
+	//virtual void BeginPlay() override;
+
 
 public:	
 	// Called every frame
 	//virtual void Tick(float DeltaTime) override;
-
-	//UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Collision");
-	//class USphereComponent* SphereCollision;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Target");
 	AActor* BP_TargetEnemy;
