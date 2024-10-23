@@ -66,10 +66,10 @@ void ACPP_BaseWeapons::GetStrongestEnemy(TArray<AActor*> OverlappingActors)
         {
             if (BP_TargetEnemy->Implements<UGetEnemyHealthInterface>()) 
             {
-                float BP_TargetEnemyHealth = IGetEnemyHealthInterface::Execute_TestGetHealth(BP_TargetEnemy);
+                float BP_TargetEnemyHealth = IGetEnemyHealthInterface::Execute_GetEnemyHealth(BP_TargetEnemy);
                 if (Actor->Implements<UGetEnemyHealthInterface>()) 
                 {
-                    float ActorHealth = IGetEnemyHealthInterface::Execute_TestGetHealth(Actor);
+                    float ActorHealth = IGetEnemyHealthInterface::Execute_GetEnemyHealth(Actor);
 
                     if (ActorHealth > BP_TargetEnemyHealth) 
                     {

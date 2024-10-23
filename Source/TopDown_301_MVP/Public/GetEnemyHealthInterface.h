@@ -23,5 +23,5 @@ class TOPDOWN_301_MVP_API IGetEnemyHealthInterface
 	// Add interface functions to this class. This is the class that will be inherited to implement this interface.
 public:
 	UFUNCTION(BlueprintImplementableEvent)
-	float TestGetHealth();
+	float GetEnemyHealth();
 };
