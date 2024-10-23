@@ -3,6 +3,7 @@
 
 #include "CPP_BaseWeapons.h"
 #include "Kismet/GameplayStatics.h"
+#include "GetEnemyHealthInterface.h"
 
 // Sets default values
 ACPP_BaseWeapons::ACPP_BaseWeapons()
@@ -63,7 +64,19 @@ void ACPP_BaseWeapons::GetStrongestEnemy(TArray<AActor*> OverlappingActors)
     {
         if (IsValid(BP_TargetEnemy))
         {
-            //if (BP_Sphere->IsOverlappingActor(ABP_TargetEnemy::StaticClass()))
+            if (BP_TargetEnemy->Implements<UGetEnemyHealthInterface>()) 
+            {
+                float BP_TargetEnemyHealth = IGetEnemyHealthInterface::Execute_TestGetHealth(BP_TargetEnemy);
+                if (Actor->Implements<UGetEnemyHealthInterface>()) 
+                {
+                    float ActorHealth = IGetEnemyHealthInterface::Execute_TestGetHealth(Actor);
+
+                    if (ActorHealth > BP_TargetEnemyHealth) 
+                    {
+                        BP_TargetEnemy = Actor;
+                    }
+                }
+            }
         }
         else
         {
