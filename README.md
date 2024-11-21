@@ -1,6 +1,14 @@
 # TopDown_301_MVP
  
-MVP Development - BSE301 Investigative Studio II
+CS302 Capstone Project
+
+GitHub:
+https://github.com/jackgiddens/CS301-TopDown-MVP-UnrealProject
+
+Game may require prerequisites:
+- DirectX Runtime
+- Microsoft Visual C++ Runtime
+- Unreal Engine
 
 Asset Credits:
 ---------------------------------------------------------
@@ -23,4 +31,7 @@ City Builder Bits by Kay Lousberg via Poly Pizza
 https://poly.pizza/bundle/City-Builder-Bits-1wLdnIddSx
 https://poly.pizza/u/Kay%20Lousberg
 
+Sound Credits:
+---------------------------------------------------------
 Sound from Zapsplat.com
+---------------------------------------------------------
