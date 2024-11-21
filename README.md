@@ -2,6 +2,11 @@
  
 CS302 Capstone Project
 
+NOTE:
+To unlock all the classes, you can grant yourself coins by clicking 
+in the top-left corner of the screen within the upgrades menu.
+(This feature is intended for testing purposes and is not part of normal gameplay.)
+
 GitHub:
 https://github.com/jackgiddens/CS301-TopDown-MVP-UnrealProject
 
